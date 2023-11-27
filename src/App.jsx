@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar onSectionChange={handleSectionChange} />
+      <Navbar onSectionChange={handleSectionChange}  activeSection={selectedSection} />
       {selectedSection === 'home' && <Home />}
       {selectedSection === 'about' && <About />}
       {selectedSection === 'portfolio' && <Portfolio />}

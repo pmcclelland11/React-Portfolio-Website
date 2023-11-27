@@ -22,12 +22,16 @@
 .desktopMenuListItem {
     margin: 1rem;
     cursor: pointer;
+    color: white;
+    text-decoration: none; 
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .desktopMenuListItem:hover {
     color: #0094FF;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid #0094FF;
+    transform: scale(1.1);
 }
 
 .desktopMenuBtn {
@@ -53,3 +57,8 @@
     width: 1.5rem;
     margin: .75rem;
 }
+
+.desktopMenuListItem.active {
+    font-weight: bolder;
+    color: #0094FF;
+  }
