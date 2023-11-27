@@ -3,6 +3,7 @@ import Home from "./components/Home/home";
 import Footer from "./components/Footer/footer";
 import About from "./components/About/about";
 import Portfolio from "./components/Portfolio/portfolio";
+import Resume from "./components/Resume/resume";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <About />
       <div className="pageDivider"></div>
       <Portfolio />
+      <div className="pageDivider"></div>
+      <Resume />
       <Footer />
     </div>
   );
