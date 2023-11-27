@@ -1,60 +1,43 @@
-import "./navbar.css";
-import { Link } from "react-scroll";
 import logo from "../../assets/logo.png";
 import contact from "../../assets/contact.png";
+import "./navbar.css";
 
-const Navbar = () => {
-    return (
-      <nav className='navbar'>
-        <img src={logo} alt='logo' className='logo' />
-        <div className='desktopMenu'>
-          <Link
-            to='home'
-            className='desktopMenuListItem'
-            smooth={true}
-            duration={500}
-          >
-            Home
-          </Link>
-          <Link
-            to='about'
-            className='desktopMenuListItem'
-            smooth={true}
-            duration={500}
-          >
-            About
-          </Link>
-          <Link
-            to='portfolio'
-            className='desktopMenuListItem'
-            smooth={true}
-            duration={500}
-          >
-            Portfolio
-          </Link>
-          <Link
-            to='resume'
-            className='desktopMenuListItem'
-            smooth={true}
-            duration={500}
-          >
-            Resume
-          </Link>
-          <Link
-            to='contact'
-            className='desktopMenuListItem'
-            smooth={true}
-            duration={500}
-          >
-            Contact
-          </Link>
+const Navbar = ({ onSectionChange }) => {
+  return (
+    <nav className="navbar">
+      <img src={logo} alt="logo" className="logo" />
+      <div className="desktopMenu">
+        <div
+          className="desktopMenuListItem"
+          onClick={() => onSectionChange("home")}
+        >
+          Home
         </div>
-        <button className='desktopMenuBtn'>
-          <img src={contact} alt='contact' className='desktopMenuImg' />
-          Contact Me
-        </button>
-      </nav>
-    );
-  };
-  
-  export default Navbar;
+        <div
+          className="desktopMenuListItem"
+          onClick={() => onSectionChange("about")}
+        >
+          About
+        </div>
+        <div
+          className="desktopMenuListItem"
+          onClick={() => onSectionChange("portfolio")}
+        >
+          Portfolio
+        </div>
+        <div
+          className="desktopMenuListItem"
+          onClick={() => onSectionChange("resume")}
+        >
+          Resume
+        </div>
+      </div>
+      <button className="desktopMenuBtn">
+        <img src={contact} alt="contact" className="desktopMenuImg" />
+        Contact
+      </button>
+    </nav>
+  );
+};
+
+export default Navbar;

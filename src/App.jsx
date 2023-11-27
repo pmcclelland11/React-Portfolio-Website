@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Navbar from "./components/Navbar/navbar";
 import Home from "./components/Home/home";
 import Footer from "./components/Footer/footer";
@@ -7,16 +8,21 @@ import Resume from "./components/Resume/resume";
 import "./App.css";
 
 function App() {
+  // Use state to track the selected section
+  const [selectedSection, setSelectedSection] = useState('home');
+
+  // Function to handle section change
+  const handleSectionChange = (section) => {
+    setSelectedSection(section);
+  };
+
   return (
     <div className="App">
-      <Navbar />
-      <Home />
-      <div className="pageDivider"></div>
-      <About />
-      <div className="pageDivider"></div>
-      <Portfolio />
-      <div className="pageDivider"></div>
-      <Resume />
+      <Navbar onSectionChange={handleSectionChange} />
+      {selectedSection === 'home' && <Home />}
+      {selectedSection === 'about' && <About />}
+      {selectedSection === 'portfolio' && <Portfolio />}
+      {selectedSection === 'resume' && <Resume />}
       <Footer />
     </div>
   );
