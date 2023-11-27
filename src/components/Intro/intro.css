@@ -1,0 +1,36 @@
+#intro {
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introContent {
+    min-height: calc(100vh - 4rem); /* Adjusted to account for the height of the Navbar */
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.name {
+    color: #0094FF;
+}
+
+.selfie {
+    height: 20rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: contain;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    margin: 2rem auto; 
+    display: block;
+}
