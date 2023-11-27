@@ -1,0 +1,83 @@
+.resumeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15rem;
+}
+
+.resumeTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0094FF;
+    padding: 2rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.timelineContainer {
+    flex: 1;
+    position: relative;
+}
+
+/* Media query for screens less than 1575 pixels wide */
+@media (max-width: 1575px) {
+    .resumeContainer {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 15rem;
+    }
+
+    .timelineContainer {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+/* Media query for screens less than 817 pixels wide */
+@media (max-width: 817px) {
+    .resumeContainer {
+        margin-right: 12rem;
+    }
+}
+
+/* Media query for screens less than 770 pixels wide */
+@media (max-width: 770px) {
+    .resumeContainer {
+        margin-right: 10rem;
+    }
+}
+
+/* Media query for screens less than 705 pixels wide */
+@media (max-width: 705px) {
+    .resumeContainer {
+        margin-right: 8rem;
+    }
+}
+
+/* Media query for screens less than 600 pixels wide */
+@media (max-width: 600px) {
+    .resumeContainer {
+        margin-right: 6rem;
+    }
+}
+
+/* Media query for screens less than 565 pixels wide */
+@media (max-width: 565px) {
+    .resumeContainer {
+        margin-right: 3rem;
+    }
+}
+
+/* Media query for screens less than 475 pixels wide */
+@media (max-width: 475px) {
+    .resumeContainer {
+        margin-right: 2rem;
+    }
+}
+
+/* Media query for screens less than 409 pixels wide */
+@media (max-width: 409px) {
+    .resumeContainer {
+        margin-right: 0;
+    }
+}
