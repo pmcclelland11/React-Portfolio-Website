@@ -86,6 +86,8 @@ const Portfolio = () => {
         </div>
       </div>
       <h3 className='moreProjects'>More Projects coming soon..</h3>
+      <br></br>
+      <br></br>
     </section>
   );
 };

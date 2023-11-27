@@ -18,8 +18,11 @@ const Home = () => {
           </p>
           <br></br>
           <h3>
-            <span className='name'>Please enjoy my Portfolio!</span>
+            <span className='name'>Please enjoy my Portfolio<span style={{ color: 'white' }}>*</span>!</span>
           </h3>
+          <h6>
+            <span style={{ fontSize: 'smaller' }}>*Built with React</span>
+          </h6>
           <br></br>
           <br></br>
         </div>
