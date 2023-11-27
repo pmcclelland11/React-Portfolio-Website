@@ -1,0 +1,94 @@
+#portfolio {
+    padding: 2rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.portfolioTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #0094FF;
+}
+
+.portfolioItems {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolioItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%; 
+    margin: 1rem;
+    text-align: center;
+}
+
+.portfolioItem img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.portfolioItem .portfolioItemLinks {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem; 
+}
+
+.portfolioItem .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.portfolioItem h3 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    color: #0094FF;
+}
+
+.portfolioItem p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+}
+
+.portfolioItem a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0094FF;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.portfolioItem a:hover {
+    background-color: #0077cc;
+}
+
+.portfolioItem .githubLogo {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    margin-top: 1rem; 
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.githubLogo:hover {
+    opacity: 0.7;
+}
+
+.moreProjects {
+    font-size: 1rem;
+    color: rgb(255, 0, 0);
+}
