@@ -1,5 +1,4 @@
-#intro {
-    min-height: calc(100vh - 4rem);
+#home {
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
@@ -10,8 +9,7 @@
     align-items: center;
 }
 
-.introContent {
-    min-height: calc(100vh - 4rem); /* Adjusted to account for the height of the Navbar */
+.homeContent {
     padding: 2rem;
     font-size: 2rem;
     font-weight: 700;

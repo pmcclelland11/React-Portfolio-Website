@@ -1,0 +1,57 @@
+#about {
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutTitle {
+    color: #0094FF;
+}
+
+.aboutDesc {
+    font-weight: 200;
+    font-size: 1.25rem;
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.techHeader {
+    font-size: 1.25rem; 
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0; 
+    color:#0094FF;
+}
+
+#techbar {
+    margin: 0.5rem 0 1.5rem 0;
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.singleTechBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    background: #6e6e6e;
+    border-radius: 0.5rem;
+}
+
+.techbarImg {
+    height: 6rem;
+    width: 6rem;
+    margin: 0 0.5rem;
+    object-fit: contain;
+}
