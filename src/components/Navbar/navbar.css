@@ -23,7 +23,7 @@
     margin: 1rem;
     cursor: pointer;
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
     font-size: larger;
     font-family: 'Roboto', sans-serif;
     transition: color 0.3s ease, text-decoration 0.3s ease;
@@ -61,4 +61,112 @@
 .desktopMenuListItem.active {
     font-weight: bolder;
     color: #0094FF;
-  }
+}
+
+/* Overlay styling */
+.custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Content styling */
+.custom-modal-content {
+    position: relative;
+    width: 60% !important;
+    max-width: 800px !important;
+    height: 60% !important;
+    max-height: 410px !important;
+    overflow-y: auto;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Form styling */
+.contactTitle {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Button styling */
+button[type='submit'] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0094FF;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type='submit']:hover {
+    background-color: #0077cc;
+}
+
+/* Close button styling */
+.closeButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Message popup styling */
+.message-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0094FF;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 999;
+}
