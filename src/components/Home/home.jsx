@@ -9,7 +9,7 @@ const Home = () => {
           <h1>
             Hi, I'm <span className='name'>Patrick McClelland</span>!
           </h1>
-          <img src={selfie} alt='grad photo' className='selfie' />
+          <img src={selfie} alt='Patrick McClelland' className='selfie' />
           <p>
             I'm a <span className='name'>full-stack web developer</span> with a
             passion for learning and creating. I have experience with Java, HTML, CSS,
