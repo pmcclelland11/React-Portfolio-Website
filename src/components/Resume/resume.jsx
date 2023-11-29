@@ -7,20 +7,20 @@ import "./resume.css";
 const Resume = () => {
   // Function to handle the download button click
   const handleDownload = () => {
-    // You can replace 'path/to/your/resume.txt' with the actual path to your resume file
-    const resumePath = 'path/to/your/resume.txt';
-    
+    // Use the public URL for the resume
+    const resumePath = process.env.PUBLIC_URL + '/resume.docx';
+  
     // Create an anchor element
     const link = document.createElement('a');
     link.href = resumePath;
-    link.download = 'Resume.txt';
-
+    link.download = 'resume.docx';
+  
     // Append the link to the document
     document.body.appendChild(link);
-
+  
     // Trigger the click event
     link.click();
-
+  
     // Remove the link from the document
     document.body.removeChild(link);
   };

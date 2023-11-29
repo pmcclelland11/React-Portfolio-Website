@@ -30,7 +30,7 @@ export const WorkingHistoryTimeline = () => {
           <Typography variant="h6" sx={{ marginTop: '-10px' }}>Full-Time Sales Expert</Typography>
           <Typography variant='body3' sx={{ display: 'block' }}><b>Company: </b>T-Mobile</Typography>
           <Typography variant='body2' sx={{ display: 'block' }}><b>Position: </b>Mobile Expert</Typography>
-          <Typography variant='body2' sx={{ display: 'block' }}><b>Note: </b>Took a step away from management to go back to school</Typography>
+          <Typography variant='body2' sx={{ display: 'block' }}><b>Achievements: </b>Circle of Achievement Winner 2020 & 2022</Typography>
           <Typography variant='body2'><b>Duration: </b>Aug 2020 - Current</Typography>
           <br></br>
         </TimelineContent>
